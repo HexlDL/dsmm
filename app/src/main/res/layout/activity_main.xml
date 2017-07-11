@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <FrameLayout android:id="@+id/fm_container"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="9"/>
+
+    <RadioGroup android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+        <RadioButton android:id="@+id/rb_home"
+                     style="@style/radio_button"
+                     android:checked="true"
+                     android:drawableTop="@drawable/selector_radio_btn_home"
+                     android:text="@string/home"/>
+
+        <RadioButton android:id="@+id/rb_product"
+                     style="@style/radio_button"
+                     android:drawableTop="@drawable/selector_radio_btn_product"
+                     android:text="@string/product"/>
+
+        <RadioButton android:id="@+id/rb_discovery"
+                     style="@style/radio_button"
+                     android:drawableTop="@drawable/selector_radio_btn_discovery"
+                     android:text="@string/discovery"/>
+
+        <RadioButton android:id="@+id/rb_account"
+                     style="@style/radio_button"
+                     android:drawableTop="@drawable/selector_radio_btn_account"
+                     android:text="@string/account"/>
+
+    </RadioGroup>
+
+</LinearLayout>

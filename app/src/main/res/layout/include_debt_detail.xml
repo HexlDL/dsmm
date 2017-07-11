@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@color/bg_white"
+                                                android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout android:layout_width="match_parent"
+                                                               android:layout_height="wrap_content"
+                                                               android:fitsSystemWindows="true"
+                                                               app:contentScrim="@color/font_violet"
+                                                               app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout style="@style/linear_layout_vertical"
+                          android:background="@color/bg_white">
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@color/font_violet"
+                              android:orientation="vertical"
+                              android:paddingBottom="10dp"
+                              android:paddingTop="10dp">
+
+                    <include layout="@layout/include_title"/>
+
+                    <TextView android:id="@+id/tv_award"
+                              style="@style/text_view"
+                              android:layout_gravity="right"
+                              android:layout_marginRight="15dp"
+                              android:text="折让比例：0.3%"
+                              android:textColor="@color/font_white"/>
+
+                    <LinearLayout style="@style/linear_layout_horizontal">
+
+                        <LinearLayout style="@style/linear_layout_horizontal"
+                                      android:layout_marginLeft="22dp"
+                                      android:layout_marginRight="22dp"
+                                      android:layout_marginTop="15dp"
+                                      android:paddingLeft="3dp">
+
+                            <RelativeLayout style="@style/relative_layout_weight">
+
+                                <TextView android:id="@+id/tv_project_sum"
+                                          style="@style/text_view"
+                                          android:layout_centerHorizontal="true"
+                                          android:text="80万元"
+                                          android:textColor="@color/font_white"
+                                          android:textSize="16sp"/>
+
+                                <TextView style="@style/text_view"
+                                          android:layout_below="@id/tv_project_sum"
+                                          android:layout_centerHorizontal="true"
+                                          android:text="原标年化"
+                                          android:textColor="@color/font_white"
+                                          android:textSize="12sp"/>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout style="@style/relative_layout_weight"
+                                            android:gravity="center_horizontal">
+
+                                <TextView android:id="@+id/tv_project_term"
+                                          style="@style/text_view"
+                                          android:text="168天"
+                                          android:textColor="@color/font_white"
+                                          android:textSize="16sp"/>
+
+                                <TextView style="@style/text_view"
+                                          android:layout_below="@id/tv_project_term"
+                                          android:text="剩余期限"
+                                          android:textColor="@color/font_white"
+                                          android:textSize="12sp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.dsmmjr.customer.ProductSeekBar android:id="@+id/progressBar"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="15dp"
+                                                        android:layout_marginRight="8dp"
+                                                        android:layout_marginTop="15dp"
+                                                        android:fadeScrollbars="false"
+                                                        android:maxHeight="4dp"
+                                                        android:progress="20"
+                                                        android:progressDrawable="@drawable/pg_invest_detail"
+                                                        android:thumb="@drawable/seekbar_thumb_white"/>
+
+                    <RelativeLayout style="@style/relative_layout"
+                                    android:layout_marginLeft="22dp"
+                                    android:layout_marginRight="22dp"
+                                    android:layout_marginTop="10dp">
+
+                        <TextView style="@style/text_view"
+                                  android:layout_alignParentLeft="true"
+                                  android:text="按月还款,测试数据"
+                                  android:textColor="@color/font_white"
+                                  android:textSize="14sp"/>
+
+                        <TextView android:id="@+id/tv_surplus_unit"
+                                  style="@style/text_view"
+                                  android:layout_alignParentRight="true"
+                                  android:layout_marginTop="3dp"
+                                  android:text="元"
+                                  android:textColor="@color/font_white"
+                                  android:textSize="14sp"/>
+
+                        <TextView android:id="@+id/tv_surplus_money"
+                                  style="@style/text_view"
+                                  android:layout_toLeftOf="@id/tv_surplus_unit"
+                                  android:text="800000"
+                                  android:textColor="@color/font_white"
+                                  android:textSize="18sp"/>
+
+                        <TextView style="@style/text_view"
+                                  android:layout_marginTop="3dp"
+                                  android:layout_toLeftOf="@+id/tv_surplus_money"
+                                  android:text="剩余债权："
+                                  android:textColor="@color/font_white"
+                                  android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView style="@style/text_view"
+                          android:layout_marginLeft="22dp"
+                          android:layout_marginTop="10dp"
+                          android:singleLine="true"
+                          android:text="转让标号:CLW170931749"
+                          android:textColor="@color/font_black"
+                          android:textSize="16sp"/>
+
+                <TextView style="@style/text_view"
+                          android:layout_width="match_parent"
+                          android:layout_marginLeft="22dp"
+                          android:layout_marginTop="3dp"
+                          android:singleLine="true"
+                          android:text="同属宝"
+                          android:textColor="@color/font_golden"
+                          android:textSize="18sp"/>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:layout_marginTop="8dp"
+                      android:background="@color/view_line"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal"
+                              android:layout_marginBottom="15dp"
+                              android:layout_marginTop="15dp"
+                              android:gravity="center_vertical"
+                              android:paddingLeft="22dp">
+
+                    <TextView style="@style/text_view"
+                              android:text="债权价值："
+                              android:textColor="@color/font_gray"
+                              android:textSize="16sp"/>
+
+                    <TextView style="@style/text_view"
+                              android:layout_marginLeft="8dp"
+                              android:text="15322元"
+                              android:textColor="@color/font_black"
+                              android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="@color/view_line"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal"
+                              android:layout_marginBottom="15dp"
+                              android:layout_marginTop="15dp"
+                              android:gravity="center_vertical"
+                              android:paddingLeft="22dp">
+
+                    <TextView style="@style/text_view"
+                              android:text="公允价值："
+                              android:textColor="@color/font_gray"
+                              android:textSize="16sp"/>
+
+                    <TextView style="@style/text_view"
+                              android:layout_marginLeft="8dp"
+                              android:text="15322元"
+                              android:textColor="@color/font_black"
+                              android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:background="@color/view_line"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal"
+                              android:layout_marginBottom="15dp"
+                              android:layout_marginTop="15dp"
+                              android:gravity="center_vertical"
+                              android:paddingLeft="22dp">
+
+                    <TextView style="@style/text_view"
+                              android:text="转让价格："
+                              android:textColor="@color/font_gray"
+                              android:textSize="16sp"/>
+
+                    <TextView style="@style/text_view"
+                              android:layout_marginLeft="8dp"
+                              android:text="15322元"
+                              android:textColor="@color/font_black"
+                              android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="15dp"
+                      android:background="@color/view_line"/>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fillViewport="true"
+                                                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.dsmmjr.customer.MyListView android:id="@+id/listview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_marginTop="30dp">
+
+            <EditText android:id="@+id/et_input_verify_code"
+                      style="@style/edittext_reg"
+                      android:hint="@string/input_verify"
+                      android:maxLines="1"
+                      android:maxLength="6"
+                      android:inputType="number"/>
+
+            <TextView android:id="@+id/tv_time"
+                      style="@style/text_view"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="50dp"
+                      android:textColor="@color/font_golden"
+                      android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_marginTop="15dp">
+
+            <EditText style="@style/edittext_reg"
+                      android:id="@+id/et_new_pwd"
+                      android:hint="@string/input_new_login_pwd"
+                      android:inputType="textPassword"/>
+
+            <ImageView style="@style/image_view"
+                       android:id="@+id/iv_hidden"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="50dp"
+                       android:contentDescription="@null"
+                       android:src="@mipmap/pwd_hidden_violet"/>
+
+        </RelativeLayout>
+
+        <Button android:id="@+id/btn_next"
+                style="@style/button_reg"
+                android:layout_marginTop="30dp"
+                android:text="@string/next"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/ll_point"
+                  style="@style/linear_layout_vertical"
+                  android:layout_height="wrap_content"
+                  android:background="@color/font_violet">
+
+        <include layout="@layout/include_title"/>
+
+        <TextView style="@style/text_view"
+                  android:layout_gravity="center"
+                  android:id="@+id/tv_all_point"
+                  android:layout_marginTop="30dp"
+                  android:textColor="@color/font_white"
+                  android:textSize="36sp"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp">
+
+            <TextView android:id="@+id/tv_use_point"
+                      style="@style/text_view"
+                      android:layout_centerInParent="true"
+                      android:text="可用成长值"
+                      android:textColor="@color/font_white"/>
+
+            <View android:layout_width="40dp"
+                  android:layout_height="1dp"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="5dp"
+                  android:layout_toLeftOf="@id/tv_use_point"
+                  android:background="@color/view_line"/>
+
+            <View android:layout_width="40dp"
+                  android:layout_height="1dp"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="5dp"
+                  android:layout_toRightOf="@id/tv_use_point"
+                  android:background="@color/view_line"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/tv_record"
+              style="@style/text_view"
+              android:layout_width="match_parent"
+              android:layout_below="@id/ll_point"
+              android:background="@color/bg_all"
+              android:padding="13dp"
+              android:text="成长值记录"
+              android:textColor="@color/font_light_black"/>
+
+    <include layout="@layout/include_pull_listview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/tv_record"/>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+
+</RelativeLayout>

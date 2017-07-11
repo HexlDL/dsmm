@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout style="@style/linear_layout_vertical"
+                  android:layout_height="match_parent">
+
+        <include layout="@layout/include_title"/>
+
+        <include layout="@layout/include_pull_listview"/>
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:id="@+id/tv_no_data"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="暂无数据"/>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

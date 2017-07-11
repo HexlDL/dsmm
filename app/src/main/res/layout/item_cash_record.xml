@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="@color/bg_white"
+                android:orientation="vertical">
+
+    <TextView android:id="@+id/tv_cash_money"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:text="提现金额5000元"
+              android:textColor="@color/font_black"
+              android:textSize="14sp"/>
+
+    <TextView android:id="@+id/tv_cash_fee"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/tv_cash_money"
+              android:layout_below="@+id/tv_cash_money"
+              android:layout_marginTop="5dp"
+              android:text="手续费2元"
+              android:textColor="@color/font_black"
+              android:textSize="14sp"/>
+
+    <TextView android:id="@+id/tv_arrival_amount"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_alignTop="@+id/tv_cash_money"
+              android:text="到账金额4998元"
+              android:textColor="@color/font_black"
+              android:textSize="14sp"/>
+
+    <TextView android:id="@+id/tv_cash_status"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/tv_cash_fee"
+              android:layout_alignRight="@+id/tv_arrival_amount"
+              android:text="提现成功"
+              android:textColor="@color/font_golden"
+              android:textSize="14sp"/>
+
+    <TextView android:id="@+id/tv_cash_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/tv_cash_status"
+              android:layout_alignBottom="@+id/tv_cash_status"
+              android:layout_marginRight="5dp"
+              android:layout_toLeftOf="@+id/tv_cash_status"
+              android:text="2015/11/11 11:12:98"/>
+
+</RelativeLayout>

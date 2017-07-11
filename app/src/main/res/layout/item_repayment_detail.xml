@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_white"
+              android:orientation="horizontal"
+              android:paddingBottom="8dp"
+              android:paddingTop="8dp">
+
+    <LinearLayout style="@style/linear_layout_weight_horizontal"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+        <TextView android:id="@+id/tv_time"
+                  style="@style/text_view_my_invest"
+                  android:text="日期"
+                  android:textColor="@color/font_black"
+                  android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_layout_weight_horizontal"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+        <TextView android:id="@+id/tv_money"
+                  style="@style/text_view_my_invest"
+                  android:text="本金（元）"
+                  android:textColor="@color/font_black"
+                  android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_layout_weight_horizontal"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+        <TextView android:id="@+id/tv_interest"
+                  style="@style/text_view_my_invest"
+                  android:text="利息（元）"
+                  android:textColor="@color/font_black"
+                  android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_layout_weight_horizontal"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+        <TextView android:id="@+id/tv_state"
+                  style="@style/text_view_my_invest"
+                  android:text="状态"
+                  android:textColor="@color/font_black"
+                  android:textSize="14sp"/>
+        <ImageView
+            android:id="@+id/img_state"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/invest_detail_examine_yes"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

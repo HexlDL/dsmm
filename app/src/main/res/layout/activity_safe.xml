@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/bg_white"
+                android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <TextView style="@style/text_view"
+                  android:layout_width="match_parent"
+                  android:background="@color/bg_all"
+                  android:padding="13dp"
+                  android:text="@string/account_private_info"
+                  android:textColor="@color/font_golden"
+                  android:textSize="16sp"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/view_line"/>
+
+        <RelativeLayout android:id="@+id/rl_security_id_card"
+                        style="@style/relative_layout_account">
+
+            <ImageView android:id="@+id/iv_id_card"
+                       style="@style/image_view_icon"
+                       android:src="@mipmap/account_id_card"/>
+
+            <TextView style="@style/textview_safe"
+                      android:layout_toRightOf="@id/iv_id_card"
+                      android:text="@string/account_id_card"/>
+
+            <ImageView android:id="@+id/iv_right_id_card"
+                       style="@style/image_view_right_jt"
+                       android:layout_height="18dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"/>
+
+            <ImageView android:id="@+id/iv_un_realname"
+                       style="@style/image_view_account"
+                       android:layout_toLeftOf="@id/iv_right_id_card"
+                       android:src="@mipmap/account_unauthorized"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/view_line"/>
+
+        <RelativeLayout android:id="@+id/rl_security_mobile"
+                        style="@style/relative_layout_account">
+
+            <ImageView android:id="@+id/iv_mobile"
+                       style="@style/image_view_icon"
+                       android:src="@mipmap/account_mobile"/>
+
+            <TextView style="@style/textview_safe"
+                      android:layout_toRightOf="@id/iv_mobile"
+                      android:text="@string/account_mobile"/>
+
+            <ImageView android:id="@+id/iv_right_mobile"
+                       style="@style/image_view_right_jt"
+                       android:layout_height="18dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"/>
+
+            <ImageView android:id="@+id/iv_un_mobile"
+                       style="@style/image_view_account"
+                       android:layout_toLeftOf="@id/iv_right_mobile"
+                       android:src="@mipmap/account_unbound"/>
+
+            <TextView android:id="@+id/tv_mobile"
+                      style="@style/textview_safe"
+                      android:layout_toLeftOf="@id/iv_right_mobile"
+                      android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/view_line"/>
+
+        <TextView style="@style/text_view"
+                  android:layout_width="match_parent"
+                  android:background="@color/bg_all"
+                  android:padding="13dp"
+                  android:text="@string/account_safe_info"
+                  android:textColor="@color/font_golden"
+                  android:textSize="16sp"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/view_line"/>
+
+        <RelativeLayout android:id="@+id/rl_security_login_pwd"
+                        style="@style/relative_layout_account">
+
+            <ImageView android:id="@+id/iv_login_pwd"
+                       style="@style/image_view_icon"
+                       android:src="@mipmap/account_login_pwd"/>
+
+            <TextView style="@style/textview_safe"
+                      android:layout_toRightOf="@id/iv_login_pwd"
+                      android:text="@string/account_login_pwd"/>
+
+            <ImageView android:id="@+id/iv_right_login_pwd"
+                       style="@style/image_view_right_jt"
+                       android:layout_height="18dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/view_line"/>
+
+        <RelativeLayout android:id="@+id/rl_security_payment_pwd"
+                        style="@style/relative_layout_account">
+
+            <ImageView android:id="@+id/iv_payment_pwd"
+                       style="@style/image_view_icon"
+                       android:src="@mipmap/account_payment_pwd"/>
+
+            <TextView style="@style/textview_safe"
+                      android:layout_toRightOf="@id/iv_payment_pwd"
+                      android:text="@string/account_payment_pwd"/>
+
+            <ImageView android:id="@+id/iv_right_payment_pwd"
+                       style="@style/image_view_right_jt"
+                       android:layout_height="18dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"/>
+
+            <ImageView android:id="@+id/iv_un_repayment_pwd"
+                       style="@style/image_view_account"
+                       android:layout_toLeftOf="@id/iv_right_payment_pwd"
+                       android:src="@mipmap/account_unsetting"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/view_line"/>
+
+        <RelativeLayout android:id="@+id/rl_security_gesture_pwd"
+                        style="@style/relative_layout_account">
+
+            <ImageView android:id="@+id/iv_gesture_pwd"
+                       style="@style/image_view_icon"
+                       android:src="@mipmap/account_gesture"/>
+
+            <TextView style="@style/textview_safe"
+                      android:layout_toRightOf="@id/iv_gesture_pwd"
+                      android:text="@string/account_gesture_pwd"/>
+
+            <ImageView android:id="@+id/iv_right_gesture_pwd"
+                       style="@style/image_view_right_jt"
+                       android:layout_height="18dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"/>
+
+            <ImageView android:id="@+id/iv_un_gesture_pwd"
+                       style="@style/image_view_account"
+                       android:layout_toLeftOf="@id/iv_right_gesture_pwd"
+                       android:src="@mipmap/account_unsetting"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/view_line"/>
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

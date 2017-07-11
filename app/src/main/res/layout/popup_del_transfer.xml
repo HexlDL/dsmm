@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/relative_layout"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shape_dialog_bg"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp">
+        <!--android:background="@color/font_red"-->
+
+        <ImageView android:id="@+id/iv_close"
+                   style="@style/image_view"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="5dp"
+                   android:src="@mipmap/explain_close"/>
+
+        <LinearLayout style="@style/linear_layout_vertical"
+                      android:layout_below="@id/iv_close"
+                      android:gravity="center_horizontal">
+
+            <TextView style="@style/text_view"
+                      android:layout_marginTop="5dp"
+                      android:text="@string/del_transfer"
+                      android:textColor="@color/font_black"
+                      android:textSize="18sp"/>
+
+            <TextView style="@style/text_view"
+                      android:layout_marginTop="8dp"
+                      android:text="@string/transfer_explain"
+                      android:textColor="@color/font_red"
+                      android:textSize="12sp"/>
+
+            <EditText android:id="@+id/et_input_pay_pwd"
+                      style="@style/edittext_reg"
+                      android:layout_marginTop="30dp"
+                      android:gravity="center"
+                      android:hint="@string/input_payment_pwd"
+                      android:inputType="textPassword"
+                      android:paddingBottom="15dp"
+                      android:paddingLeft="0dp"
+                      android:paddingTop="15dp"/>
+
+            <Button android:id="@+id/btn_cancle"
+                    style="@style/button_reg"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/confirm_del"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+
+</RelativeLayout>

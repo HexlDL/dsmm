@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/font_white"
+              android:orientation="vertical">
+
+    <!--<RelativeLayout android:id="@+id/rl_header_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_violet"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="25dp">
+
+        <ImageView android:id="@+id/iv_left_back"
+                   style="@style/left_back_image_view"
+                   android:onClick="left_back"
+                   android:src="@drawable/shape_left_jt"/>
+
+        <TextView android:id="@+id/tv_header_title"
+                  style="@style/include_text_view"
+                  android:textColor="@color/font_white"
+                  android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>-->
+    <!--
+
+        <GridView android:id="@+id/constellation"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="12dp"
+                  android:horizontalSpacing="5dp"
+                  android:listSelector="@color/font_white"
+                  android:numColumns="3"
+                  android:paddingBottom="5dp"
+                  android:paddingTop="5dp"
+                  android:verticalSpacing="10dp"/>
+
+        <TextView android:id="@+id/ok"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"
+                  android:background="@color/font_violet"
+                  android:gravity="center"
+                  android:padding="8dp"
+                  android:text="确定"
+                  android:textColor="@color/font_white"
+                  android:textSize="16sp"/>
+    -->
+
+    <include layout="@layout/include_title"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+        <LinearLayout style="@style/linear_layout_vertical"
+                      android:paddingBottom="20dp"
+                      android:paddingLeft="10dp"
+                      android:paddingTop="10dp">
+
+            <TextView style="@style/text_view"
+                      android:layout_marginBottom="7dp"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginTop="7dp"
+                      android:text="项目状态"
+                      android:textColor="@color/font_black"/>
+
+            <GridView android:id="@+id/gv_product"
+                      android:layout_width="match_parent"
+                      android:layout_height="120dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="12dp"
+                      android:gravity="center"
+                      android:horizontalSpacing="5dp"
+                      android:listSelector="@color/font_white"
+                      android:numColumns="3"
+                      android:paddingBottom="5dp"
+                      android:paddingTop="5dp"
+                      android:verticalSpacing="10dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="7dp"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginTop="7dp"
+                      android:text="信用等级"
+                      android:textColor="@color/font_black"/>
+
+            <GridView android:id="@+id/gv_grade"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="12dp"
+                      android:gravity="center"
+                      android:horizontalSpacing="5dp"
+                      android:listSelector="@color/font_white"
+                      android:numColumns="3"
+                      android:paddingBottom="5dp"
+                      android:paddingTop="5dp"
+                      android:verticalSpacing="10dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="7dp"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginTop="7dp"
+                      android:text="项目期限"
+                      android:textColor="@color/font_black"/>
+
+            <GridView android:id="@+id/gv_term"
+                      android:layout_width="match_parent"
+                      android:layout_height="120dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="12dp"
+                      android:gravity="center"
+                      android:horizontalSpacing="5dp"
+                      android:listSelector="@color/font_white"
+                      android:numColumns="3"
+                      android:paddingBottom="5dp"
+                      android:paddingTop="5dp"
+                      android:verticalSpacing="10dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="7dp"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginTop="7dp"
+                      android:text="还款方式"
+                      android:textColor="@color/font_black"/>
+
+            <GridView android:id="@+id/gv_style"
+                      android:layout_width="match_parent"
+                      android:layout_height="120dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="12dp"
+                      android:gravity="center"
+                      android:horizontalSpacing="5dp"
+                      android:listSelector="@color/font_white"
+                      android:numColumns="3"
+                      android:paddingBottom="5dp"
+                      android:paddingTop="5dp"
+                      android:verticalSpacing="10dp"/>
+
+            <Button android:id="@+id/btn_submit"
+                    style="@style/button_reg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_btn_invest"
+                    android:text="确认"
+                    android:textColor="@color/font_white"
+                    android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

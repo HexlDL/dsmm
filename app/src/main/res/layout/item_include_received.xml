@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_all"
+              android:orientation="vertical">
+
+    <TextView style="@style/text_view"
+              android:layout_marginBottom="8dp"
+              android:layout_marginLeft="13dp"
+              android:layout_marginTop="8dp"
+              android:text="2017-03-01"
+              android:textColor="@color/font_gray"
+              android:textSize="16sp"/>
+
+    <RelativeLayout style="@style/relative_layout"
+                    android:background="@color/bg_white"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:paddingTop="12dp">
+
+        <TextView android:id="@+id/tv_name"
+                  style="@style/text_view"
+                  android:text="金属板B-123"
+                  android:textColor="@color/font_black"
+                  android:textSize="16sp"/>
+
+        <TextView android:id="@+id/tv_corpus"
+                  style="@style/text_view"
+                  android:layout_below="@id/tv_name"
+                  android:layout_marginTop="10dp"
+                  android:text="待回本金（元）"
+                  android:textColor="@color/font_gray"
+                  android:textSize="14sp"/>
+
+        <TextView android:id="@+id/tv_corpus_money"
+                  style="@style/text_view"
+                  android:layout_below="@id/tv_name"
+                  android:layout_marginLeft="3dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_toRightOf="@id/tv_corpus"
+                  android:text="58.00"
+                  android:textColor="@color/font_violet"
+                  android:textSize="16sp"/>
+
+        <TextView android:id="@+id/tv_term"
+                  style="@style/text_view"
+                  android:layout_alignParentRight="true"
+                  android:text="期数：1/6"
+                  android:textColor="@color/font_gray"
+                  android:textSize="14sp"/>
+
+        <TextView android:id="@+id/tv_interest"
+                  style="@style/text_view"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@id/tv_term"
+                  android:layout_marginTop="10dp"
+                  android:text="0.82"
+                  android:textColor="@color/font_violet"
+                  android:textSize="18sp"/>
+
+        <TextView android:id="@+id/tv_un_interest"
+                  style="@style/text_view"
+                  android:layout_below="@id/tv_term"
+                  android:layout_marginTop="12dp"
+                  android:layout_toLeftOf="@id/tv_interest"
+                  android:text="待回利息（元）"
+                  android:layout_marginRight="3dp"
+                  android:textColor="@color/font_gray"
+                  android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

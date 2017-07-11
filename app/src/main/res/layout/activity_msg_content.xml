@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout style="@style/linear_layout_vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <RelativeLayout style="@style/relative_layout">
+
+            <ImageView style="@style/image_view"
+                       android:src="@mipmap/msg_content"/>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:id="@+id/view_line"
+                  android:layout_marginTop="120dp"/>
+
+            <TextView android:id="@+id/tv_title"
+                      style="@style/text_view"
+                      android:layout_centerHorizontal="true"
+                      android:layout_below="@id/view_line"
+                      android:textColor="@color/font_golden"
+                      android:textSize="16sp"/>
+
+            <TextView android:id="@+id/tv_content"
+                      style="@style/text_view"
+                      android:layout_below="@+id/tv_title"
+                      android:layout_marginLeft="50dp"
+                      android:layout_marginRight="50dp"
+                      android:layout_marginTop="25dp"
+                      android:lineSpacingExtra="2dp"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+
+            <TextView android:id="@+id/tv_money"
+                      style="@style/text_view"
+                      android:layout_below="@+id/tv_content"
+                      android:layout_marginLeft="50dp"
+                      android:layout_marginRight="50dp"
+                      android:layout_marginTop="5dp"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

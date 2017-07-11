@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/bg_white"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp">
+
+            <TextView android:id="@+id/tv_borrow_name"
+                      style="@style/text_view"
+                      android:textColor="@color/font_black"
+                      android:textSize="16sp"/>
+
+            <TextView android:id="@+id/tv_height"
+                      style="@style/text_view"
+                      android:layout_below="@id/tv_borrow_name"
+                      android:layout_marginTop="15dp"
+                      android:text="最高转让价格"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_transfer_price"
+                      style="@style/text_view"
+                      android:layout_alignTop="@id/tv_height"
+                      android:layout_below="@id/tv_borrow_name"
+                      android:layout_marginLeft="20dp"
+                      android:layout_toRightOf="@id/tv_height"
+                      android:textColor="@color/font_violet"
+                      android:textSize="16sp"/>
+
+            <TextView android:id="@+id/tv_fee"
+                      style="@style/text_view"
+                      android:layout_below="@id/tv_height"
+                      android:layout_marginTop="15dp"
+                      android:text="转让手续费"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_debt_fee"
+                      style="@style/text_view"
+                      android:layout_alignTop="@id/tv_fee"
+                      android:layout_below="@id/tv_fee"
+                      android:layout_marginLeft="20dp"
+                      android:layout_toRightOf="@id/tv_height"
+                      android:textColor="@color/font_violet"
+                      android:textSize="16sp"/>
+
+            <TextView android:id="@+id/tv_datag"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignTop="@+id/tv_debt_fee"
+                      android:layout_marginLeft="11dp"
+                      android:layout_marginStart="11dp"
+                      android:layout_toEndOf="@+id/tv_debt_fee"
+                      android:layout_toRightOf="@+id/tv_debt_fee"
+                      android:text="TextView"/>
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="15dp"
+              android:background="@color/view_line"/>
+
+        <RelativeLayout style="@style/linear_layout_horizontal_recharge"
+                        android:layout_marginTop="2dp">
+
+            <TextView android:id="@+id/tv_cash_money"
+                      style="@style/text_view"
+                      android:text="@string/transfer_price"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <EditText android:id="@+id/et_input_transfer_price"
+                      style="@style/edittext"
+                      android:layout_marginLeft="35dp"
+                      android:layout_toRightOf="@id/tv_cash_money"
+                      android:background="@null"
+                      android:hint="@string/input_transfer_price"
+                      android:maxLines="1"
+                      android:textSize="14sp"/>
+
+            <TextView style="@style/text_view"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="55dp"
+                      android:text="元"
+                      android:textColor="@color/font_black"/>
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@color/view_line"/>
+
+        <RelativeLayout style="@style/linear_layout_horizontal_recharge"
+                        android:layout_marginTop="2dp">
+
+            <TextView android:id="@+id/tv_pay_pwd"
+                      style="@style/text_view"
+                      android:text="@string/account_payment_pwd"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <EditText android:id="@+id/et_pay_pwd"
+                      style="@style/edittext"
+                      android:layout_width="wrap_content"
+                      android:layout_marginLeft="35dp"
+                      android:layout_toRightOf="@id/tv_pay_pwd"
+                      android:background="@null"
+                      android:hint="@string/input_payment_pwd"
+                      android:inputType="textPassword"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_forget_pwd"
+                      style="@style/text_view"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="5dp"
+                      android:text="@string/forget_pay_pwd"
+                      android:textColor="@color/font_golden"/>
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@color/view_line"/>
+
+        <Button android:id="@+id/btn_transfer"
+                style="@style/button_reg"
+                android:layout_marginTop="25dp"
+                android:text="@string/confirm_transfer"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

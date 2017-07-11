@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_all"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout style="@style/linear_layout_horizontal_all_plan">
+
+        <LinearLayout style="@style/linear_layout_vertical"
+                      android:layout_weight="1"
+                      android:gravity="center">
+
+            <TextView style="@style/text_view_all_plan"
+                      android:text="3382.00"/>
+
+            <TextView style="@style/text_view_all_plan"
+                      android:layout_marginTop="3dp"
+                      android:text="应收总额（元）"
+                      android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_layout_vertical"
+                      android:layout_weight="1"
+                      android:gravity="center">
+
+            <TextView style="@style/text_view_all_plan"
+                      android:text="3382.00"/>
+
+            <TextView style="@style/text_view_all_plan"
+                      android:layout_marginTop="3dp"
+                      android:text="本金（元）"
+                      android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_layout_vertical"
+                      android:layout_weight="1"
+                      android:gravity="center">
+
+            <TextView style="@style/text_view_all_plan"
+                      android:text="3382.00"/>
+
+            <TextView style="@style/text_view_all_plan"
+                      android:layout_marginTop="3dp"
+                      android:text="收益（元）"
+                      android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_layout_vertical"
+                      android:layout_weight="1"
+                      android:gravity="center">
+
+            <TextView style="@style/text_view_all_plan"
+                      android:text="338"/>
+
+            <TextView style="@style/text_view_all_plan"
+                      android:layout_marginTop="3dp"
+                      android:text="笔数"
+                      android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/include_tab_layout"/>
+
+</LinearLayout>

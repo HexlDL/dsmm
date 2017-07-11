@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_all"
+              android:orientation="vertical">
+
+        <RelativeLayout android:id="@+id/viewpager_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:background="@color/bg_white">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout android:id="@+id/viewGroup"
+                          style="@style/linear_layout_horizontal"
+                          android:layout_alignParentBottom="true"
+                          android:layout_marginBottom="12dp"
+                          android:gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view"
+                                                style="@style/recycler_view"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

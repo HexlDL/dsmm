@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+    <TextView android:id="@+id/tv_phone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="138***588"
+              android:textColor="@color/font_black"
+              android:textSize="16sp"/>
+
+    <TextView android:id="@+id/tv_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/tv_phone"
+              android:layout_marginTop="3dp"
+              android:text="2017-03-02 09:14"
+              android:textColor="@color/font_gray"
+              android:textSize="16sp"/>
+
+    <TextView android:id="@+id/tv_amount"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:text="10000元"
+              android:textColor="@color/font_black"
+              android:textSize="16sp"/>
+
+    <TextView android:id="@+id/tv_state"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_alignTop="@+id/tv_time"
+              android:textSize="16sp"
+              android:text="复审通过"
+              android:textColor="@color/font_golden"/>
+
+
+</RelativeLayout>

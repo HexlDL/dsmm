@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="45dp"
+               android:src="@mipmap/reg_success"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:gravity="center"
+              android:text="注册成功！"
+              android:textColor="@color/font_golden"
+              android:textSize="22sp"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="7dp"
+              android:gravity="center"
+              android:text="感谢您对袋鼠妈妈的支持"
+              android:textColor="@color/font_black"
+              android:textSize="14sp"/>
+
+    <Button android:id="@+id/btn_complete"
+            style="@style/button_home"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:text="@string/complete_safe_real"/>
+
+    <TextView android:id="@+id/back_home"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginTop="5dp"
+              android:drawableLeft="@mipmap/back_home"
+              android:drawablePadding="3dp"
+              android:gravity="center"
+              android:text="返回首页"
+              android:textColor="@color/font_light_black"/>
+
+</LinearLayout>

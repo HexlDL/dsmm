@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_marginTop="30dp">
+
+            <EditText android:id="@+id/et_input_code"
+                      style="@style/edittext_reg"
+                      android:hint="@string/input_verify"
+                      android:maxLength="6"
+                      android:inputType="number"/>
+
+            <TextView android:id="@+id/tv_time"
+                      style="@style/text_view"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="50dp"
+                      android:text="获取验证码"
+                      android:textColor="@color/font_violet"
+                      android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <Button android:id="@+id/btn_next"
+                style="@style/button_reg"
+                android:text="@string/next"/>
+
+        <TextView style="@style/text_view"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="25dp"
+                  android:text="@string/original_phone"
+                  android:textSize="16sp"/>
+
+        <LinearLayout style="@style/linear_layout_horizontal"
+                      android:layout_height="40dp"
+                      android:gravity="center">
+
+            <TextView style="@style/text_view"
+                      android:text="@string/contact_service"
+                      android:textSize="16sp"/>
+
+            <TextView android:id="@+id/tv_call"
+                      style="@style/text_view"
+                      android:layout_marginLeft="5dp"
+                      android:text="@string/_400_828_1616"
+                      android:textColor="@color/font_golden"
+                      android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

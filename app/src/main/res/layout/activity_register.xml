@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white"
+                android:orientation="vertical">
+
+    <LinearLayout style="@style/linear_layout_vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <EditText android:id="@+id/et_input_phone"
+                  style="@style/edittext_reg"
+                  android:layout_marginTop="70dp"
+                  android:hint="@string/input_mobile"
+                  android:inputType="phone"/>
+
+        <Button android:id="@+id/btn_next"
+                style="@style/button_reg"
+                android:text="@string/next"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

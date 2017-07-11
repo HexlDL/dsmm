@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <LinearLayout style="@style/linear_layout_horizontal"
+                      android:background="@color/bg_white"
+                      android:padding="5dp">
+
+            <TextView style="@style/text_view"
+                      android:layout_marginLeft="10dp"
+                      android:text="@string/real_name"
+                      android:textColor="@color/font_black"
+                      android:textSize="16sp"/>
+
+            <EditText android:id="@+id/et_input_realname"
+                      style="@style/edittext"
+                      android:layout_marginLeft="25dp"
+                      android:background="@null"
+                      android:hint="@string/input_real_name"
+                      android:padding="10dp"
+                      android:singleLine="true"
+                      android:textColor="@color/font_black"
+                      android:textColorHint="@color/font_gray"
+                      android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@color/view_line"/>
+
+        <LinearLayout style="@style/linear_layout_horizontal"
+                      android:background="@color/bg_white"
+                      android:padding="5dp">
+
+            <TextView style="@style/text_view"
+                      android:layout_marginLeft="10dp"
+                      android:text="@string/id_card"
+                      android:textColor="@color/font_black"
+                      android:textSize="16sp"/>
+
+            <EditText android:id="@+id/et_id_card"
+                      style="@style/edittext"
+                      android:layout_marginLeft="25dp"
+                      android:background="@null"
+                      android:hint="@string/input_id_card"
+                      android:maxLines="1"
+                      android:padding="10dp" android:textColor="@color/font_black"
+                      android:textColorHint="@color/font_gray"
+                      android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@color/view_line"/>
+
+        <Button android:id="@+id/btn_complete"
+                style="@style/button_reg"
+                android:layout_margin="10dp"
+                android:text="@string/complete_real"/>
+
+        <TextView style="@style/text_view"
+                  android:layout_margin="10dp"
+                  android:text="@string/matters_needing_attention"
+                  android:textColor="@color/font_golden"
+                  android:textSize="14sp"/>
+
+        <TextView style="@style/text_view"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:lineSpacingExtra="2dp"
+                  android:text="@string/matters_desc"
+                  android:textColor="@color/font_light_black"
+                  android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

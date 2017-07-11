@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_all">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="pullFromStart">
+
+        <LinearLayout style="@style/linear_layout_vertical">
+
+            <RelativeLayout android:id="@+id/viewpager_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:background="@color/bg_white">
+
+                <!-- <android.support.v4.view.ViewPager
+                     android:id="@+id/viewPager"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"/>-->
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout android:id="@+id/viewGroup"
+                              style="@style/linear_layout_horizontal"
+                              android:layout_alignParentBottom="true"
+                              android:layout_marginBottom="12dp"
+                              android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+            <LinearLayout style="@style/linear_layout_horizontal"
+                          android:background="@color/bg_white"
+                          android:paddingBottom="12dp"
+                          android:paddingTop="12dp">
+
+                <LinearLayout style="@style/linear_layout_weight_horizontal"
+                              android:paddingLeft="15dp"
+                              android:paddingStart="15dp">
+
+                    <TextView style="@style/text_view"
+                              android:text="@string/sum_money"
+                              android:textSize="14sp"/>
+
+                    <TextView android:id="@+id/tv_turnover"
+                              style="@style/text_view"
+                              android:text=""
+                              android:textColor="@color/font_red"
+                              android:textSize="18sp"/>
+
+                    <!--   <TextView style="@style/text_view"
+                                 android:text="@string/money_company"
+                                 android:textSize="14sp"/>
+    -->
+                </LinearLayout>
+
+                <LinearLayout style="@style/linear_layout_weight_horizontal"
+                              android:paddingLeft="30dp">
+
+                    <TextView style="@style/text_view"
+                              android:text="@string/safe_operation"
+                              android:textSize="14sp"/>
+
+                    <TextView android:id="@+id/tv_safe_operate"
+                              style="@style/text_view"
+                              android:text=""
+                              android:textColor="@color/font_red"
+                              android:textSize="18sp"/>
+
+                    <TextView style="@style/text_view"
+                              android:text="@string/day_company"
+                              android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linear_layout_horizontal"
+                          android:layout_marginTop="1dp"
+                          android:background="@color/bg_white"
+                          android:paddingBottom="15dp"
+                          android:paddingTop="15dp">
+
+                <RelativeLayout android:id="@+id/rl_sign"
+                                style="@style/relative_layout_weight"
+                                android:paddingLeft="25dp">
+
+                    <ImageView android:id="@+id/iv_sign"
+                               style="@style/image_view"
+                               android:layout_height="25dp"
+                               android:layout_centerVertical="true"
+                               android:src="@mipmap/home_tree"/>
+
+                    <TextView android:id="@+id/tv_sign"
+                              style="@style/text_view"
+                              android:layout_marginLeft="10dp"
+                              android:layout_toEndOf="@id/iv_sign"
+                              android:layout_toRightOf="@id/iv_sign"
+                              android:text="@string/home_tree"
+                              android:textColor="@color/font_light_black"
+                              android:textSize="16sp"/>
+
+                    <TextView style="@style/text_view"
+                              android:layout_below="@id/tv_sign"
+                              android:layout_marginLeft="10dp"
+                              android:layout_toEndOf="@id/iv_sign"
+                              android:layout_toRightOf="@id/iv_sign"
+                              android:text="@string/home_tree_des"
+                              android:textColor="@color/font_gray"
+                              android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout android:id="@+id/rl_friend"
+                                style="@style/relative_layout_weight"
+                                android:paddingLeft="25dp"
+                                android:paddingStart="25dp">
+
+                    <ImageView android:id="@+id/iv_invite"
+                               style="@style/image_view"
+                               android:layout_height="25dp"
+                               android:layout_centerVertical="true"
+                               android:src="@mipmap/home_invite"/>
+
+                    <TextView android:id="@+id/tv_invite"
+                              style="@style/text_view"
+                              android:layout_marginLeft="10dp"
+                              android:layout_toRightOf="@id/iv_invite"
+                              android:text="@string/home_invite"
+                              android:textColor="@color/font_light_black"
+                              android:textSize="16sp"/>
+
+                    <TextView style="@style/text_view"
+                              android:layout_below="@id/tv_invite"
+                              android:layout_marginLeft="10dp"
+                              android:layout_toRightOf="@id/iv_invite"
+                              android:text="@string/home_invite_des"
+                              android:textColor="@color/font_gray"
+                              android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout style="@style/relative_layout"
+                            android:padding="5dp">
+
+                <LinearLayout style="@style/linear_layout_vertical"
+                              android:layout_margin="8dp"
+                              android:background="@color/bg_white">
+
+                    <TextView android:id="@+id/tv_title"
+                              style="@style/text_view"
+                              android:layout_gravity="center_horizontal"
+                              android:layout_marginTop="15dp"
+                              android:text=""
+                              android:textColor="@color/font_black"
+                              android:textSize="20sp"/>
+
+                    <TextView android:id="@+id/tv_apr"
+                              style="@style/text_view"
+                              android:layout_gravity="center_horizontal"
+                              android:layout_marginTop="10dp"
+                              android:text=""
+                              android:textColor="@color/font_golden"
+                              android:textSize="50sp"/>
+
+                    <TextView
+                        style="@style/text_view"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/home_year_profit"
+                        android:textColor="@color/font_gray"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout style="@style/linear_layout_horizontal"
+                                  android:layout_marginTop="15dp">
+
+                        <LinearLayout style="@style/linear_layout_weight_horizontal">
+
+                            <LinearLayout style="@style/linear_layout_vertical"
+                                          android:gravity="center">
+
+                                <TextView android:id="@+id/tv_project_term"
+                                          style="@style/text_view"
+                                          android:text=""
+                                          android:textColor="@color/font_light_black"
+                                          android:textSize="16sp"/>
+
+                                <TextView style="@style/text_view"
+                                          android:text="@string/home_project_term"
+                                          android:textColor="@color/font_gray"
+                                          android:textSize="14sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/linear_layout_weight_horizontal">
+
+                            <LinearLayout style="@style/linear_layout_vertical"
+                                          android:gravity="center">
+
+                                <TextView android:id="@+id/tv_project_sum"
+                                          style="@style/text_view"
+                                          android:text=""
+                                          android:textColor="@color/font_light_black"
+                                          android:textSize="16sp"/>
+
+                                <TextView style="@style/text_view"
+                                          android:text="@string/home_project_sum"
+                                          android:textColor="@color/font_gray"
+                                          android:textSize="14sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/linear_layout_weight_horizontal">
+
+                            <LinearLayout style="@style/linear_layout_vertical"
+                                          android:gravity="center">
+
+                                <TextView android:id="@+id/tv_surplus_amount"
+                                          style="@style/text_view"
+                                          android:text=""
+                                          android:textColor="@color/font_light_black"
+                                          android:textSize="16sp"/>
+
+                                <TextView style="@style/text_view"
+                                          android:text="@string/home_surplus_amount"
+                                          android:textColor="@color/font_gray"
+                                          android:textSize="14sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button android:id="@+id/btn_invest"
+                            style="@style/button_home"
+                            android:layout_height="50dp"
+                            android:visibility="gone"
+                            android:text="@string/home_invest"/>
+
+                </LinearLayout>
+
+                <ImageView android:id="@+id/iv_icon"
+                           style="@style/image_view"
+                           android:layout_height="45dp"
+                           android:layout_marginTop="15dp"
+                           android:src="@mipmap/home_icon"/>
+
+            </RelativeLayout>
+
+            <ImageView android:id="@+id/iv_my_loan"
+                       style="@style/image_view"
+                       android:layout_width="match_parent"
+                       android:layout_height="70dp"
+                       android:scaleType="centerCrop"
+                       android:src="@mipmap/home_loan"/>
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <include android:id="@+id/layout_waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

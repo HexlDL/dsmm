@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout style="@style/linear_layout_vertical"
+                  android:layout_height="match_parent">
+
+        <include layout="@layout/include_title"/>
+
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            <LinearLayout style="@style/linear_layout_vertical"
+                          android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/tv_title"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="20dp"
+                          android:gravity="center"
+                          android:textColor="@color/font_black"
+                          android:textSize="20sp"/>
+
+                <TextView android:id="@+id/tv_author"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:gravity="center"
+                          android:textColor="@color/font_light_black"
+                          android:textSize="14sp"/>
+
+                <TextView android:id="@+id/tv_content"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="20dp"
+                          android:layout_marginRight="20dp"
+                          android:layout_marginTop="10dp"
+                          android:textColor="@color/font_black"
+                          android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

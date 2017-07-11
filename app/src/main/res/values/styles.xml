@@ -1,0 +1,390 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="my_popup_window_anim">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+
+    <!-- 自定义Dialog -->
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="text_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--线性布局-->
+    <style name="linear_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="linear_layout_vertical" parent="linear_layout">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linear_layout_horizontal" parent="linear_layout">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--线性布局 权重-->
+    <style name="linear_layout_weight_horizontal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="linear_layout_weight_vertical">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--相对布局-->
+    <style name="relative_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--相对布局  权重-->
+    <style name="relative_layout_weight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--所有Img图片自适应-->
+    <style name="image_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Button-->
+    <style name="button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="button_reg" parent="button">
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:background">@drawable/shape_btn_invest</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <!--首页投资按钮-->
+    <style name="button_home" parent="button">
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@drawable/shape_btn_invest</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--EditText-->
+    <style name="edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--GridView-->
+    <style name="grid_view">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:numColumns">3</item>
+    </style>
+
+    <!--recycler_view-->
+    <style name="recycler_view">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--登录-->
+    <style name="edittext_login" parent="edittext">
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:background">@drawable/shape_edit_login</item>
+        <item name="android:textColor">#E3CEFF</item>
+        <item name="android:textColorHint">#E3CEFF</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="android:cursorVisible">false</item>-->
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">11</item>
+    </style>
+
+    <!--注册-->
+    <style name="edittext_reg" parent="edittext">
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:background">@drawable/shape_edit_reg</item>
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:textColorHint">@color/font_gray</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="android:cursorVisible">false</item>-->
+        <item name="android:maxLength">11</item>
+    </style>
+
+    <!--textview标题属性-->
+    <style name="include_text_view" parent="text_view">
+        <!--<item name="android:layout_centerVertical">true</item>-->
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <!--左箭头属性-->
+    <style name="left_back_image_view">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <!--<item name="android:layout_centerVertical">true</item>-->
+    </style>
+
+    <!--主页面4个按钮-->
+    <style name="radio_button">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_radio_btn_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_view_account" parent="text_view">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+
+    <style name="text_view_account_money" parent="text_view">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+
+    <style name="text_view_address" parent="text_view">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="text_view_account_cash" parent="text_view">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_golden</item>
+        <item name="android:text">提现</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="text_view_account_recharge" parent="text_view">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_violet</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">充值</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="image_view_account_weight" parent="image_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_weight">0.6</item>
+    </style>
+
+    <style name="text_view_account_weight" parent="text_view">
+        <item name="android:layout_weight">8</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/font_light_black</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="image_view_right_jt" parent="image_view">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:src">@drawable/shape_right_jt</item>
+    </style>
+
+    <style name="linear_layout_horizontal_account" parent="linear_layout_horizontal">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@color/bg_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <!--安全中心-->
+    <style name="textview_safe" parent="text_view">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">13dp</item>
+        <item name="android:textColor">@color/font_light_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="image_view_icon" parent="image_view">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="relative_layout_account" parent="relative_layout">
+        <item name="android:background">@color/bg_white</item>
+        <item name="android:paddingBottom">17dp</item>
+        <item name="android:paddingTop">17dp</item>
+    </style>
+
+    <style name="image_view_account" parent="image_view">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="linear_layout_horizontal_recharge" parent="linear_layout_horizontal">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:background">@color/bg_white</item>
+    </style>
+
+    <style name="linear_layout_horizontal_fy_account" parent="linear_layout_horizontal">
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="text_view_fy_account" parent="text_view">
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+    <style name="edittext_fy_account" parent="edittext">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/font_gray</item>
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="edittext_address" parent="edittext">
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/font_gray</item>
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="relative_layout_fy_account" parent="relative_layout">
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <style name="text_view_all_plan" parent="text_view">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_view_my_invest" parent="text_view">
+        <item name="android:textColor">@color/font_violet</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_view_my_invest_desc" parent="text_view">
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="text_view_help" parent="text_view">
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="image_view_help" parent="image_view">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="weekName">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="linear_layout_horizontal_all_plan" parent="linear_layout_horizontal">
+        <item name="android:background">@color/font_violet</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:paddingRight">13dp</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    <style name="text_view_auto" parent="text_view">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/font_golden</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="text_view_desc" parent="text_view">
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_dialog_bg">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/explain_close"/>
+
+        <ListView android:id="@+id/lv_popup_redpackets_select"
+                  android:layout_width="match_parent"
+                  android:layout_height="260dp"
+                  android:layout_below="@id/iv_close"
+                  android:divider="@color/font_gray"
+                  android:dividerHeight="1px"
+                  android:scrollbars="none"
+                  android:smoothScrollbar="true"/>
+
+        <Button android:id="@+id/btn_confirm"
+                style="@style/button_home"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/lv_popup_redpackets_select"
+                android:text="确认使用"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

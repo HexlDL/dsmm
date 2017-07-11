@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative_layout"
+                android:background="@color/bg_white">
+
+    <LinearLayout style="@style/linear_layout_vertical"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="7dp"
+                  android:layout_marginRight="7dp">
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/view_line"/>
+
+        <TextView android:id="@+id/tv_error_msg"
+                  style="@style/text_view"
+                  android:layout_marginLeft="13dp"
+                  android:visibility="gone"
+                  android:layout_marginTop="8dp"
+                  android:textColor="@color/font_red"/>
+
+        <LinearLayout style="@style/linear_layout_horizontal"
+                      android:layout_marginTop="5dp"
+                      android:gravity="center_vertical">
+
+            <EditText android:id="@+id/et_red_commend"
+                      android:layout_width="0dp"
+                      android:layout_height="40dp"
+                      android:layout_weight="7"
+                      android:background="@drawable/shape_edit_rate"
+                      android:hint="请输入红包口令"
+                      android:textSize="14sp"/>
+
+            <Button android:id="@+id/btn_exchange"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/shape_btn_invest"
+                    android:text="兑换"
+                    android:textColor="@color/font_white"
+                    android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginTop="15dp"
+              android:background="@color/view_line"/>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_refresh_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:divider="@color/view_line"
+            android:dividerHeight="12dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both"/>
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:id="@+id/tv_no_data"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="暂无数据"/>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

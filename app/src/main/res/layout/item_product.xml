@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout style="@style/linear_layout_horizontal"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical">
+
+        <TextView android:id="@+id/tv_name"
+                  style="@style/text_view"
+                  android:layout_alignParentLeft="true"
+                  android:text=""
+                  android:textColor="@color/font_black"
+                  android:textSize="16sp"/>
+
+        <TextView style="@style/text_view"
+                  android:visibility="gone"/>
+
+        <TextView android:id="@+id/tv_award"
+                  style="@style/text_view"
+                  android:layout_alignParentRight="true"
+                  android:text=""
+                  android:textColor="@color/font_red"
+                  android:textSize="12sp"/>
+
+        <!--<TextView style="@style/text_view"
+                  android:layout_toLeftOf="@id/tv_award"
+                  android:text="@string/invest_award"
+                  android:textColor="@color/font_light_black"
+                  android:textSize="12sp"/>-->
+
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/linear_layout_horizontal"
+                  android:layout_marginLeft="22dp"
+                  android:layout_marginRight="22dp"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:paddingBottom="5dp"
+                  android:paddingLeft="3dp">
+
+        <RelativeLayout style="@style/relative_layout_weight">
+
+            <TextView android:id="@+id/tv_year_apr"
+                      style="@style/text_view"
+                      android:text=""
+                      android:textColor="@color/font_golden"
+                      android:textSize="20sp"/>
+
+            <TextView style="@style/text_view"
+                      android:layout_below="@id/tv_year_apr"
+                      android:text="@string/home_year_profit"
+                      android:textColor="@color/font_light_black"
+                      android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout_weight"
+                        android:gravity="center_horizontal|left">
+
+            <TextView android:id="@+id/tv_project_term"
+                      style="@style/text_view"
+                      android:text=""
+                      android:textColor="@color/font_golden"
+                      android:textSize="16sp"/>
+
+            <TextView style="@style/text_view"
+                      android:layout_below="@id/tv_project_term"
+                      android:text="@string/home_project_term"
+                      android:textColor="@color/font_light_black"
+                      android:textSize="12sp"/>
+
+
+        </RelativeLayout>
+
+
+        <com.dsmmjr.customer.MyButton android:id="@+id/btn_status"
+                                      android:layout_width="80dp"
+                                      android:layout_height="35dp"
+                                      android:background="@drawable/shape_btn_invest"
+                                      android:textColor="@color/font_white"/>
+        <!--
+                    <TextView android:id="@+id/tv_time"
+                              style="@style/text_view"
+                              android:layout_alignParentRight="true"
+                              android:layout_below="@+id/tv_surplus_time"
+                              android:text=""
+                              android:textColor="@color/font_violet"
+                              android:textSize="18sp"/>
+        -->
+
+        <!--<TextView android:id="@+id/tv_surplus_time"
+                  style="@style/text_view"
+                  android:layout_alignRight="@id/tv_time"
+                  android:text="@string/surplus_time"
+                  android:textColor="@color/font_light_black"
+                  android:textSize="12sp"/>-->
+
+    </LinearLayout>
+
+    <com.dsmmjr.customer.ProductSeekBar android:id="@+id/pb_scale"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginRight="8dp"
+                                        android:layout_marginTop="5dp"
+                                        android:fadeScrollbars="false"
+                                        android:maxHeight="4dp"
+                                        android:progress="20"
+                                        android:progressDrawable="@drawable/po_seekbar"
+                                        android:thumb="@drawable/seekbar_thumb"/>
+
+    <RelativeLayout style="@style/relative_layout"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp">
+
+        <TextView android:id="@+id/tv_style"
+                  style="@style/text_view"
+                  android:layout_alignParentLeft="true"
+                  android:text=""
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/font_light_black"
+                  android:textSize="12sp"/>
+
+        <TextView android:id="@+id/tv_surplus"
+                  style="@style/text_view"
+                  android:text="222"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/font_violet"
+                  android:textSize="16sp"/>
+
+        <TextView android:id="@+id/tv_surplus_desc"
+                  style="@style/text_view"
+                  android:layout_toLeftOf="@+id/tv_surplus"
+                  android:text="剩余："
+                  android:layout_marginTop="1dp"
+                  android:layout_centerVertical="true"
+                  android:layout_alignBottom="@+id/tv_surplus"
+                  android:textColor="@color/font_light_black"
+                  android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

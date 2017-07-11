@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_all"
+                android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="pullFromStart">
+
+        <LinearLayout style="@style/linear_layout_vertical">
+
+            <LinearLayout style="@style/linear_layout_vertical"
+                          android:layout_height="wrap_content"
+                          android:background="@mipmap/account_my">
+
+                <TextView android:id="@+id/tv_exit"
+                          style="@style/text_view"
+                          android:layout_gravity="right"
+                          android:layout_marginRight="15dp"
+                          android:layout_marginTop="25dp"
+                          android:text="@string/exit"
+                          android:textColor="@color/font_white"
+                          android:textSize="16sp"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal"
+                              android:layout_marginTop="15dp"
+                              android:gravity="center">
+
+                    <TextView style="@style/text_view_account"
+                              android:text="@string/account_sum_money"/>
+
+                    <ImageView style="@style/image_view"
+                               android:id="@+id/iv_money_hidden"
+                               android:layout_width="wrap_content"
+                               android:padding="10dp"
+                               android:src="@mipmap/pwd_display"/>
+
+                </LinearLayout>
+
+                <TextView android:id="@+id/total_money"
+                          style="@style/text_view_account"
+                          android:layout_gravity="center_horizontal"
+                          android:textSize="36sp"
+                          android:textStyle="bold"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal"
+                              android:layout_marginTop="10dp"
+                              android:gravity="center">
+
+                    <TextView style="@style/text_view_account"
+                              android:layout_gravity="center_horizontal"
+                              android:text="@string/account_income_received"/>
+
+                    <TextView android:id="@+id/tv_benefit_money"
+                              style="@style/text_view_account_money"
+                              android:layout_gravity="center_horizontal"
+                              android:layout_marginLeft="2dp"
+                              android:text=""/>
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1px"
+                      android:layout_marginTop="15dp"
+                      android:background="#b351e0"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal"
+                              android:paddingBottom="15dp"
+                              android:paddingTop="15dp">
+
+                    <RelativeLayout style="@style/relative_layout_weight">
+
+                        <TextView android:id="@+id/tv_usable_money"
+                                  style="@style/text_view_account_money"
+                                  android:layout_centerHorizontal="true"/>
+
+                        <TextView style="@style/text_view_account"
+                                  android:layout_below="@id/tv_usable_money"
+                                  android:layout_centerHorizontal="true"
+                                  android:layout_marginTop="3dp"
+                                  android:text="@string/account_usable_money"/>
+
+                    </RelativeLayout>
+
+                    <View android:layout_width="1px"
+                          android:layout_height="50dp"
+                          android:background="#b351e0"/>
+
+                    <RelativeLayout style="@style/relative_layout_weight">
+
+                        <TextView android:id="@+id/tv_collection_money"
+                                  style="@style/text_view_account_money"
+                                  android:layout_centerHorizontal="true"/>
+
+                        <TextView style="@style/text_view_account"
+                                  android:layout_below="@id/tv_collection_money"
+                                  android:layout_centerHorizontal="true"
+                                  android:layout_marginTop="3dp"
+                                  android:text="@string/account_collection_money"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linear_layout_horizontal"
+                          android:layout_height="50dp"
+                          android:background="@color/bg_white"
+                          android:gravity="center_horizontal">
+
+                <TextView android:id="@+id/tv_cash"
+                          style="@style/text_view_account_cash"/>
+
+                <View android:layout_width="1px"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginLeft="40dp"
+                      android:layout_marginRight="40dp"
+                      android:background="@color/view_line"/>
+
+                <TextView android:id="@+id/tv_recharge"
+                          style="@style/text_view_account_recharge"/>
+
+            </LinearLayout>
+
+            <!-- <View android:layout_width="match_parent" android:layout_height="2dp"
+                   android:background="#b351e0"/>-->
+
+            <LinearLayout android:id="@+id/ll_my_invest"
+                          style="@style/linear_layout_horizontal_account"
+                          android:layout_marginTop="8dp">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_invest"/>
+
+                <TextView style="@style/text_view_account_weight"
+                          android:text="我的投资"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ll_my_debt"
+                          style="@style/linear_layout_horizontal_account">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_debt"/>
+
+                <TextView android:id="@+id/textView2"
+                          style="@style/text_view_account_weight"
+                          android:text="我的转让"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ll_my_auto"
+                          style="@style/linear_layout_horizontal_account">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_auto"/>
+
+                <TextView style="@style/text_view_account_weight"
+                          android:text="自动投标"/>
+
+                <TextView android:id="@+id/tv_auto_state"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ll_my_detail"
+                          style="@style/linear_layout_horizontal_account">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_detail"/>
+
+                <TextView style="@style/text_view_account_weight"
+                          android:text="资金明细"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>
+
+            <!--<LinearLayout android:id="@+id/ll_my_calendar"
+                          style="@style/linear_layout_horizontal_account">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_calendar"/>
+
+                <TextView style="@style/text_view_account_weight"
+                          android:text="回款日历"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>-->
+
+            <LinearLayout android:id="@+id/ll_my_safe"
+                          style="@style/linear_layout_horizontal_account">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_safe"/>
+
+                <TextView style="@style/text_view_account_weight"
+                          android:text="安全中心"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ll_my_red"
+                          style="@style/linear_layout_horizontal_account">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_red"/>
+
+                <TextView style="@style/text_view_account_weight"
+                          android:text="红包卡券"/>
+
+                <TextView android:id="@+id/tv_red_count"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="已开起"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ll_my_fy"
+                          style="@style/linear_layout_horizontal_account">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_fy"/>
+
+                <TextView style="@style/text_view_account_weight"
+                          android:text="富友金账户"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ll_my_msg"
+                          style="@style/linear_layout_horizontal_account">
+
+                <ImageView style="@style/image_view_account_weight"
+                           android:src="@mipmap/account_my_msg"/>
+
+                <TextView style="@style/text_view_account_weight"
+                          android:text="站内消息"/>
+
+                <TextView android:id="@+id/tv_msg_count"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="已开起"/>
+
+                <ImageView style="@style/image_view_right_jt"/>
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="10dp"
+                  android:background="@color/view_line"/>
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <include android:id="@+id/ll_wv"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+</RelativeLayout>

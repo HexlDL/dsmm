@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"/>
+
+    <ImageView android:id="@+id/iv_sign_bg"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="fitXY"
+               android:src="@mipmap/sign_bg"/>
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="230dp"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <ImageView
+                android:id="@+id/prevMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/prev_month"/>
+
+            <TextView
+                android:id="@+id/currentMonth"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="2014年6月"
+                android:textColor="@color/font_black"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/nextMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/next_month"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginBottom="10dp"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginTop="10dp"
+              android:background="#ff8091a8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#ffffffff">
+
+            <TextView
+                style="@style/weekName"
+                android:text="日"
+                android:textColor="#177ed6"/>
+
+            <TextView
+                style="@style/weekName"
+                android:text="一"/>
+
+            <TextView
+                style="@style/weekName"
+                android:text="二"/>
+
+            <TextView
+                style="@style/weekName"
+                android:text="三"/>
+
+            <TextView
+                style="@style/weekName"
+                android:text="四"/>
+
+            <TextView
+                style="@style/weekName"
+                android:text="五"/>
+
+            <TextView
+                style="@style/weekName"
+                android:text="六"
+                android:textColor="#177ed6"/>
+        </LinearLayout>
+
+        <ViewFlipper android:id="@+id/flipper"
+                     android:layout_width="match_parent"
+                     android:layout_height="260dp"
+                     android:layout_marginLeft="30dp"
+                     android:layout_marginRight="30dp"/>
+
+        <Button android:id="@+id/btn_sign"
+                style="@style/button_home"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="立即签到"
+                android:textSize="16sp"/>  <Button
+                style="@style/button_home"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="立即签到"
+                android:textSize="16sp"/>  <Button
+                style="@style/button_home"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="立即签到"
+                android:textSize="16sp"/>  <Button
+                style="@style/button_home"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="立即签到"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

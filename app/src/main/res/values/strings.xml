@@ -1,0 +1,239 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="cancel">取消</string>
+    <string name="try_again">重试</string>
+    <string name="goon">继续</string>
+
+    <!-- Gesture code starting -->
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="setup_gesture_pattern">绘制解锁图案</string>
+    <string name="setup_gesture_pattern_again">再次绘制解锁图案</string>
+    <string name="forget_gesture_code">忘记手势密码?</string>
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="set_gesture_pattern">绘制解锁图案</string>
+    <string name="set_gesture_pattern_reason">设置手势密码，防止他人未经授权查看</string>
+    <string name="reset_gesture_code">重新设置手势密码</string>
+    <string name="gesture_code_error">手势密码不正确,请重新绘制</string>
+    <!-- End -->
+
+    <!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+
+    <string name="app_name">袋鼠妈妈金融</string>
+    <string name="home">首页</string>
+    <string name="product">产品</string>
+    <string name="discovery">发现</string>
+    <string name="account">我的</string>
+
+    <!--标题-->
+    <string name="title_reg">注册</string>
+    <string name="title_safe_center">安全中心</string>
+    <string name="title_fy_account">富友金账户</string>
+    <string name="title_real_name">实名认证</string>
+    <string name="title_update_mobile">手机号修改</string>
+    <string name="title_update_payment">支付密码修改</string>
+    <string name="title_forget_payment">支付密码重置</string>
+    <string name="title_update_login_pwd">登录密码修改</string>
+    <string name="title_recharge">充值</string>
+    <string name="title_recharge_recode">充值记录</string>
+    <string name="title_forgot_pwd">忘记密码</string>
+    <string name="title_red_rate">红包卡券</string>
+    <string name="title_received_payments">回款日历</string>
+    <string name="title_all_plan">全部回款计划</string>
+    <string name="title_cash">提现</string>
+    <string name="title_cash_record">提现记录</string>
+    <string name="title_msg">站内消息</string>
+    <string name="title_capital_detail">资金明细</string>
+    <string name="title_auto_setting">自动投标设置</string>
+    <string name="title_debt_detail">转让详情</string>
+    <string name="title_help_center">帮助中心</string>
+    <string name="title_auto_record">自动投标记录</string>
+    <string name="title_my_debt">我的转让</string>
+    <string name="title_my_invest">我的投资</string>
+    <string name="title_friend">邀请好友</string>
+    <string name="title_point_detail">详情</string>
+    <string name="title_news">袋鼠新闻</string>
+    <string name="title_notice">网站公告</string>
+    <string name="title_point">会员福利社</string>
+    <string name="title_exchange_record">兑换记录</string>
+    <string name="title_msg_content">消息内容</string>
+    <string name="title_sign">签到</string>
+
+    <string name="home_tree">黄金树</string>
+    <string name="home_tree_des">每日浇水赚现金</string>
+    <string name="home_invite">邀请好友</string>
+    <string name="home_invite_des">轻松赚现金</string>
+    <string name="home_year_profit">预期年化收益</string>
+    <string name="home_project_term">项目期限</string>
+    <string name="home_project_sum">项目总额</string>
+    <string name="home_surplus_amount">剩余金额</string>
+    <string name="home_invest">立即投资</string>
+
+    <string name="account_sum_money">账户总额（元）</string>
+    <string name="account_income_received">待收收益（元）:</string>
+    <string name="account_usable_money">可用余额（元）</string>
+    <string name="account_collection_money">待收金额（元）</string>
+    <string name="account_id_card">实名认证</string>
+    <string name="account_mobile">绑定手机</string>
+    <string name="account_safe_info">安全信息</string>
+    <string name="account_private_info">个人信息</string>
+    <string name="account_login_pwd">登录密码</string>
+    <string name="account_money">账户余额</string>
+    <string name="account_payment_pwd">支付密码</string>
+    <string name="account_gesture_pwd">手势密码</string>
+
+    <string name="input_real_name">请输真实姓名</string>
+    <string name="input_transfer_price">请输入转让价格</string>
+    <string name="input_verify">请输入短信验证码</string>
+    <string name="input_id_card">请输您的身份证号码</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="input_new_mobile">请输入新手机号</string>
+    <string name="input_new_verify">请输入新手机验证码</string>
+    <string name="input_original_payment_pwd">请输入原支付密码</string>
+    <string name="input_new_payment_pwd">请输入新支付密码</string>
+    <string name="input_new_pwd">请输入新密码</string>
+    <string name="input_original_pwd">请输入原密码</string>
+    <string name="input_new_login_pwd">请输入新密码</string>
+    <string name="input_recharge_money">请输入充值金额</string>
+    <string name="input_payment_pwd">请输入支付密码</string>
+    <string name="input_max_money">请输入最大金额</string>
+    <string name="input_min_money">请输入最小金额</string>
+    <string name="input_mobile">请输入手机号</string>
+    <string name="input_receiver_amount">请输入保留金额</string>
+    <string name="input_apr">请输入年化收益</string>
+    <string name="input_rate_code">输入加息券兑换码</string>
+
+    <string name="recharge_mode">充值方式</string>
+    <string name="fy_pay">富友支付</string>
+    <string name="recharge_money">充值金额</string>
+    <string name="capital_amount">大写金额</string>
+    <string name="recharge">快速充值</string>
+    <string name="recharge_record">充值记录</string>
+    <string name="_400_828_1616">400–828–1616</string>
+    <string name="contact_service">请联系客服</string>
+    <string name="original_phone">如果原手机号不可用</string>
+    <string name="pay_explain0">富友充值说明：</string>
+    <string name="exit">退出</string>
+    <string name="forget_pay_pwd">忘记支付密码？</string>
+    <string name="sum_money">总成交额：</string>
+    <string name="money_company">元</string>
+    <string name="day_company">天</string>
+    <string name="safe_operation">安全运营：</string>
+    <string name="confirm">确定</string>
+    <string name="all_plan">全部回款计划</string>
+    <string name="use_cash_money">可提现金额</string>
+    <string name="cash_money">提现金额</string>
+    <string name="confirm_cash">确认提现</string>
+    <string name="prompt">提示：</string>
+    <string name="fee">手续费：</string>
+    <string name="selector">筛选</string>
+    <string name="cash_record">提现记录</string>
+    <string name="confirm_update">确认修改</string>
+    <string name="confirm_transfer">确认转让</string>
+    <string name="transfer_price">转让价格</string>
+    <string name="transfer_explain">债权转让只能转让3次，3次后将不能再进行转让。</string>
+    <string name="confirm_del">确认撤销</string>
+    <string name="product_detail">项目详情</string>
+    <string name="invest_record">投资记录</string>
+    <string name="auto_record">自动投标记录</string>
+    <string name="double_tap_to_exit">再按一次退出程序</string>
+    <string name="auto">自动投标</string>
+    <string name="money_unit">元</string>
+    <string name="apr_unit">%</string>
+    <string name="sign_record">签到记录</string>
+    <string name="term_unit">个月～</string>
+    <string name="use_money">可用余额</string>
+    <string name="reserve_money">保留金额</string>
+    <string name="apr_year">年化收益≥</string>
+    <string name="start_term">投标期限</string>
+    <string name="max_money">最大金额</string>
+    <string name="save_setting">保存设置</string>
+    <string name="auto_explain">自动投标设置规则说明：</string>
+    <string name="exchange_record">兑换记录</string>
+    <string name="goods">实物商品</string>
+    <string name="redeem_code">虚拟商品</string>
+    <string name="distribution">配送至：</string>
+    <string name="menu_lock">Lock</string>
+    <string name="menu_unlock">Unlock</string>
+    <string name="surplus_term">剩余期限</string>
+    <string name="original_year">借款利率</string>
+    <string name="allowance_ratio">折让比例</string>
+    <string name="use_rule">使用规则</string>
+    <string name="complete_safe_real">完成安全认证，开始赚钱！</string>
+    <string name="detail">详情</string>
+    <string name="my_point">成长值</string>
+    <string name="remember_username">记住用户名</string>
+    <string name="login">立即登录</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="register">立即注册</string>
+    <string name="next">下一步</string>
+    <string name="setting_pwd">请设置6–16位登录密码</string>
+    <string name="invite_mobile">请填写邀请码/邀请人手机号(选填)</string>
+    <string name="complete">完成</string>
+    <string name="surplus_time">距开标还有</string>
+    <string name="invest_award">投资奖励：</string>
+    <string name="real_name">真实姓名</string>
+    <string name="id_card">身份证号</string>
+    <string name="id_card_positive">身份证正面</string>
+    <string name="id_card_opposite">身份证反面</string>
+    <string name="complete_real">完成实名验证</string>
+    <string name="matters_needing_attention">请注意以下事项：</string>
+    <string name="del_transfer">撤销债权转让</string>
+
+    <!--说明-->
+    <string name="pay_explain1">1.快速充值只支持已签约用户，如需签约，请联系客服；\n 2.未在富友金账户开户的，请先开户；
+        \n
+        3.富友网银充值支持以下银行卡：中行、工行、建行、交行、招行、民生、兴业、广发、中信、华夏、光大、邮储、浦发、银联（部分银行的银行卡号不支持充值交易，详情请点击“常见不支持银行卡”）。
+    </string>
+    <string name="fy_recharge_explain">
+        1.快速充值只支持已签约用户，如需签约，请联系客服；
+        \n 2.未在富友金账户开户的，请先开户；
+        \n
+        3.富友网银充值支持以下银行卡：中行、工行、建行、交行、招行、民生、兴业、广发、中信、华夏、光大、邮储、浦发、银联（部分银行的银行卡号不支持充值交易，详情请点击“常见不支持银行卡”）。
+    </string>
+    <string name="matters_desc">1、我们将通过全国公民身份信息中心（NCIIC）系统对您提交的身份进行审核；
+        \n 2、实名谁是您绑定银行卡和使用袋鼠妈妈金融核心功能的必要条件，提现时的银行账户名以您提交的认证信息为准；
+        \n 3、如果您在验证过程中，出现任何问题，请联系网站客服。
+    </string>
+
+    <string name="cash_counter_fee">1. 会员单笔提现金额小于等于10000的情况下，每笔收取1元提现手续费；
+        \n 2. 会员单笔提现金额超过10000的，每笔收取2元提现手续费；
+        \n 3. 会员单日单笔提现上限5万,单日提现资金上限30万。
+    </string>
+    <string name="prompt_explain">
+        如果您要加快提现速度，请在每日上午提现。袋鼠妈妈金融周一到周五的提现处理时间在下午2点之后，周末在下午或者晚上在法定节日期间，用户申请提现，安排支付时间，袋鼠妈妈金融会以公告形式发布。
+    </string>
+    <string name="title_feed_back">在线反馈</string>
+    <string name="title_address">添加收货地址</string>
+    <string name="input_receipt_username">请输入收货人姓名</string>
+    <string name="input_receipt_mobile">请输入收货人手机号</string>
+    <string name="input_receipt_procity">请输入省，市，区</string>
+    <string name="input_receipt_address">请输入接到、门牌等详细地址信息</string>
+    <string name="input_cach_money">请输入提现金额</string>
+    <string name="title_payments_detail">回款详情</string>
+    <string name="title_home">首页</string>
+    <string name="title_transfer">转让</string>
+    <string name="money">待收本息</string>
+    <string name="title_loan">我要借款</string>
+    <string name="title_red_rule">红包使用规则</string>
+    <string name="title_rate_rule">加息券使用规则</string>
+    <string name="rate_rule">加息券使用说明： \n1.获取方式：系统赠送、节假日活动、积分兑换； \n2.适用于平台除体验标外的其他所有标的；
+        \n3.请在有效期内进行使用和兑换，过期无效。
+    </string>
+    <string name="red_rule">1.获取方式：系统赠送、节假日活动、积分兑换； \n2.请在红包有效期内使用，过期无效；
+        \n3.红包可投项目类型包括月鼠宝、铜鼠宝、银鼠宝、金鼠宝A、金鼠宝B、铂金宝、钻石宝。
+    </string>
+    <string name="title_tree">黄金树</string>
+    <string name="title_award">积分抽奖</string>
+    <string name="title_set_gesture_pwd">设置手势密码</string>
+    <string name="cancle">跳过</string>
+
+
+</resources>

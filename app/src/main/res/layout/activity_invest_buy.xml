@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentTop="true"
+                  android:background="@color/bg_white"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="13dp"
+                        android:paddingRight="13dp"
+                        android:paddingTop="7dp">
+
+            <TextView android:id="@+id/tv_amount"
+                      style="@style/text_view"
+                      android:layout_centerVertical="true"
+                      android:text="账户余额："
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_account_money"
+                      style="@style/text_view"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@id/tv_amount"
+                      android:textColor="@color/font_red"
+                      android:textSize="16sp"/>
+
+            <Button android:id="@+id/btn_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_btn_invest"
+                    android:text="充值"
+                    android:textColor="@color/font_white"
+                    android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@color/view_line"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_marginLeft="13dp"
+                        android:paddingBottom="7dp"
+                        android:paddingRight="13dp"
+                        android:paddingTop="7dp">
+
+            <TextView android:id="@+id/tv_invest"
+                      style="@style/text_view"
+                      android:layout_centerVertical="true"
+                      android:text="投资金额："
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <EditText android:id="@+id/et_min_amount"
+                      style="@style/edittext"
+                      android:layout_width="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@id/tv_invest"
+                      android:background="@null"
+                      android:hint="最小投资金额50元"
+                      android:inputType="number"
+                      android:maxLength="11"
+                      android:maxLines="1"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <Button android:id="@+id/btn_all_invest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_btn_all_invest"
+                    android:text="全投"
+                    android:textColor="@color/font_golden"
+                    android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_all_invest"
+                android:layout_alignBottom="@+id/btn_all_invest"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/btn_all_invest" android:layout_toStartOf="@+id/btn_all_invest"
+                android:text="元"/>
+
+        </RelativeLayout>
+
+        <TextView android:id="@+id/tv_expected"
+                  style="@style/text_view"
+                  android:layout_width="match_parent"
+                  android:background="@color/bg_fee"
+                  android:paddingBottom="2dp"
+                  android:paddingLeft="13dp"
+                  android:paddingTop="2dp"
+                  android:textColor="@color/font_black"
+                  android:textSize="12sp"
+                  android:visibility="gone"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="3dp"
+              android:background="@color/view_line"/>
+
+        <LinearLayout android:id="@+id/ll_use_red"
+                      style="@style/linear_layout_horizontal"
+                      android:layout_marginLeft="13dp"
+                      android:visibility="gone"
+                      android:paddingBottom="16dp"
+                      android:paddingTop="16dp">
+
+            <TextView android:id="@+id/tv_card_volume"
+                      style="@style/text_view"
+                      android:text="使用卡券："
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_card"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/font_light_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_card_value"
+                      android:layout_width="60dp"
+                      android:layout_height="22dp"
+                      android:background="@mipmap/card_bg"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="5dp"
+                      android:textColor="@color/font_light_black"
+                      android:textSize="14sp"
+                      android:visibility="gone"/>
+
+            <TextView android:id="@+id/tv_use"
+                      style="@style/text_view"
+                      android:layout_marginLeft="8dp"
+                      android:text="“去使用”"
+                      android:textColor="@color/font_golden"
+                      android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="15dp"
+              android:background="@color/view_line"/>
+
+        <EditText android:id="@+id/et_is_pwd"
+                  style="@style/edittext"
+                  android:background="@null"
+                  android:hint="请输入定向密码"
+                  android:inputType="textPassword"
+                  android:padding="13dp"
+                  android:visibility="gone"
+                  android:textColor="@color/font_black"
+                  android:textSize="14sp"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@color/view_line"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:paddingRight="13dp">
+
+            <EditText android:id="@+id/et_pay_pwd"
+                      style="@style/edittext"
+                      android:background="@null"
+                      android:hint="@string/input_payment_pwd"
+                      android:inputType="textPassword"
+                      android:maxLength="16"
+                      android:maxLines="1"
+                      android:padding="13dp"
+                      android:paddingLeft="8dp"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_target_pwd"
+                      style="@style/text_view"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="8dp"
+                      android:text="@string/forget_pay_pwd"
+                      android:textColor="@color/font_golden"
+                      android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@color/view_line"/>
+
+        <Button android:id="@+id/btn_invest"
+                style="@style/button_home"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:text="确定投资"
+                android:visibility="gone"
+                android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

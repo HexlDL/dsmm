@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/activity_register_pwd"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <RelativeLayout style="@style/relative_layout"
+                    android:layout_marginTop="70dp">
+
+        <EditText android:id="@+id/et_input_pwd"
+                  style="@style/edittext_reg"
+                  android:hint="@string/setting_pwd"
+                  android:inputType="textPassword"
+                  android:maxLength="16"/>
+
+        <ImageView android:id="@+id/iv_pwd"
+                   style="@style/image_view"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="50dp"
+                   android:contentDescription="@null"
+                   android:src="@mipmap/pwd_hidden_violet"/>
+
+    </RelativeLayout>
+
+    <EditText android:id="@+id/et_invite"
+              style="@style/edittext_reg"
+              android:layout_marginTop="20dp"
+              android:hint="@string/invite_mobile"
+              android:inputType="phone"/>
+
+    <Button android:id="@+id/btn_next"
+            style="@style/button_reg"
+            android:text="@string/complete"/>
+
+    <TextView android:id="@+id/tv_register_agreement"
+              style="@style/text_view"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="40dp"
+              android:textSize="16sp"/>
+
+</LinearLayout>

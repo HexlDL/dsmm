@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <RelativeLayout style="@style/relative_layout"
+                    android:padding="10dp">
+
+        <TextView android:id="@+id/tv_money"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="充值金额 5000元"
+                  android:textColor="@color/font_black"
+                  android:textSize="14sp"/>
+
+        <TextView android:id="@+id/tv_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/tv_money"
+                  android:layout_marginTop="5dp"
+                  android:text="2016/06/09 12:12:12"
+                  android:textColor="@color/font_light_black"/>
+
+        <TextView android:id="@+id/tv_state"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:text="充值成功"
+                  android:textColor="@color/font_golden"
+                  android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

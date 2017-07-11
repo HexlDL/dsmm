@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_marginTop="30dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_login"
+                  android:text="原支付密码默认为登录密码"
+                  android:layout_marginLeft="50dp"
+                  android:textColor="@color/font_red"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_marginTop="10dp">
+
+            <EditText android:id="@+id/et_old_pwd"
+                      style="@style/edittext_reg"
+                      android:hint="@string/input_original_payment_pwd"
+                      android:inputType="textPassword"/>
+
+            <ImageView android:id="@+id/iv_old_pwd_show"
+                       style="@style/image_view"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="50dp"
+                       android:contentDescription="@null"
+                       android:src="@mipmap/pwd_hidden_violet"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_marginTop="15dp">
+
+            <EditText android:id="@+id/et_new_pwd"
+                      style="@style/edittext_reg"
+                      android:hint="@string/input_new_payment_pwd"
+                      android:inputType="textPassword"/>
+
+            <ImageView android:id="@+id/iv_new_pwd_show"
+                       style="@style/image_view"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="50dp"
+                       android:contentDescription="@null"
+                       android:src="@mipmap/pwd_hidden_violet"/>
+
+        </RelativeLayout>
+
+        <TextView android:id="@+id/tv_forget_pwd"
+                  style="@style/text_view"
+                  android:layout_gravity="right"
+                  android:layout_marginBottom="15dp"
+                  android:layout_marginRight="35dp"
+                  android:layout_marginTop="15dp"
+                  android:text="@string/forget_pay_pwd"
+                  android:textColor="@color/font_golden"/>
+
+
+        <Button android:id="@+id/btn_confirm_update"
+                style="@style/button_reg"
+                android:layout_marginTop="1dp"
+                android:text="@string/confirm_update"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

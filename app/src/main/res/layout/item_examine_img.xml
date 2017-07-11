@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ll_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+    <ImageView android:id="@+id/iv_img"
+               android:layout_width="110dp"
+               android:layout_height="130dp"
+               android:scaleType="centerCrop"
+               android:layout_centerHorizontal="true"
+               android:src="@mipmap/tab_product_light"/>
+
+    <TextView android:id="@+id/tv_name"
+              style="@style/text_view"
+              android:layout_below="@+id/view_line2"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="8dp"
+              android:textColor="@color/font_black"
+              android:textSize="14sp"/>
+
+    <ImageView android:id="@+id/iv_info"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:visibility="gone"/>
+
+    <View android:id="@+id/view_line"
+          android:layout_width="1dp"
+          android:layout_height="170dp"
+          android:layout_toLeftOf="@id/iv_img"
+          android:background="@color/view_line"/>
+
+    <View android:layout_width="1dp"
+          android:layout_height="170dp"
+          android:layout_toRightOf="@id/iv_img"
+          android:background="@color/view_line"/>
+
+    <View android:layout_width="110dp"
+          android:id="@+id/view_line2"
+          android:layout_height="1dp"
+          android:layout_below="@id/iv_img"
+          android:layout_centerHorizontal="true"
+          android:background="@color/view_line"/>
+
+    <View android:layout_width="110dp"
+          android:layout_height="1dp"
+            android:layout_alignBottom="@id/view_line"
+          android:layout_centerHorizontal="true"
+          android:background="@color/view_line"/>
+
+</RelativeLayout>

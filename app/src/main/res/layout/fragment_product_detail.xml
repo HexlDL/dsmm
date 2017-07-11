@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_product_detail"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <TextView android:id="@+id/tv_info"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@mipmap/invest_detail_info"
+              android:drawablePadding="10dp"
+              android:drawableRight="@mipmap/up_jt"
+              android:gravity="center_vertical"
+              android:padding="15dp"
+              android:text="基本信息"
+              android:textColor="@color/font_black"
+              android:textSize="14sp"/>
+
+    <View android:id="@+id/view_line1"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@color/view_line"/>
+
+    <LinearLayout android:id="@+id/ll_info"
+                  style="@style/linear_layout_vertical"
+                  android:layout_marginTop="10dp">
+
+        <LinearLayout style="@style/linear_layout_horizontal"
+                      android:paddingLeft="15dp">
+
+            <TextView style="@style/text_view"
+                      android:text="借款用途："
+                      android:textColor="@color/font_gray"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_borrow_use"
+                      style="@style/text_view"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_layout_horizontal"
+                      android:layout_marginTop="5dp"
+                      android:paddingLeft="15dp">
+
+            <TextView style="@style/text_view"
+                      android:text="发布日期："
+                      android:textColor="@color/font_gray"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_add_time"
+                      style="@style/text_view"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_layout_horizontal"
+                      android:layout_marginTop="5dp"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="10dp">
+
+            <TextView style="@style/text_view"
+                      android:text="项目介绍："
+                      android:textColor="@color/font_gray"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_borrow_info"
+                      style="@style/text_view"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View android:id="@+id/view_line2"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/view_line"/>
+
+    <TextView android:id="@+id/tv_examine_detail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@mipmap/invest_detail_examine_detail"
+              android:drawablePadding="10dp"
+              android:drawableRight="@mipmap/up_jt"
+              android:gravity="center_vertical"
+              android:padding="15dp"
+              android:text="审核详情"
+              android:textColor="@color/font_black"
+              android:textSize="14sp"/>
+
+    <View android:id="@+id/view_line3"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@color/view_line"/>
+
+    <GridView android:id="@+id/grid_view_detail"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:numColumns="3"
+              android:paddingBottom="10dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="10dp"
+              android:verticalSpacing="5dp"/>
+
+    <View android:id="@+id/view_line4"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@color/view_line"/>
+
+    <TextView android:id="@+id/tv_examine_img"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@mipmap/invest_detail_examine_img"
+              android:drawablePadding="10dp"
+              android:drawableRight="@mipmap/down_jt"
+              android:gravity="center_vertical"
+              android:padding="15dp"
+              android:text="审核图片"
+              android:textColor="@color/font_black"
+              android:textSize="14sp"/>
+
+    <View android:id="@+id/view_line5"
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@color/view_line"/>
+
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view_img"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:paddingBottom="10dp"
+                                            android:paddingLeft="15dp"
+                                            android:paddingRight="15dp"
+                                            android:verticalSpacing="15dp"
+                                            android:visibility="gone"/>
+
+</LinearLayout>

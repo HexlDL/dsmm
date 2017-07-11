@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/red_use"
+                android:orientation="vertical">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="30dp"
+              android:layout_marginTop="25dp"
+              android:text="加\n息\n券"
+              android:textColor="@color/font_violet"
+              android:textSize="30sp"/>
+
+    <TextView android:id="@+id/tv_red_money"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="30dp"
+              android:text="15元"
+              android:textColor="@color/font_golden"
+              android:textSize="34sp"/>
+
+    <TextView android:id="@+id/tv_red_term"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@id/tv_red_money"
+              android:layout_below="@id/tv_red_money"
+              android:layout_marginLeft="7dp"
+              android:layout_marginTop="7dp"
+              android:text="有效期："
+              android:textColor="@color/font_light_black"
+              android:textSize="16sp"/>
+
+    <TextView android:id="@+id/tv_red_term_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/tv_red_money"
+              android:layout_marginLeft="7dp"
+              android:layout_marginTop="7dp"
+              android:layout_toRightOf="@id/tv_red_term"
+              android:textColor="@color/font_light_black"
+              android:textSize="16sp"/>
+
+    <TextView android:id="@+id/tv_red_range"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@id/tv_red_money"
+              android:layout_below="@id/tv_red_term"
+              android:layout_marginLeft="7dp"
+              android:layout_marginTop="7dp"
+              android:text="有效期："
+              android:textColor="@color/font_light_black"
+              android:textSize="16sp"/>
+
+    <TextView android:id="@+id/tv_red_range_desc"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/tv_red_term"
+              android:layout_marginLeft="7dp"
+              android:layout_marginTop="7dp"
+              android:layout_toRightOf="@id/tv_red_range"
+              android:text="有效期："
+              android:textColor="@color/font_light_black"
+              android:textSize="16sp"/>
+
+
+</RelativeLayout>

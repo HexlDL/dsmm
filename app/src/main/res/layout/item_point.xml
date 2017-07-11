@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="10dp">
+
+    <TextView android:id="@+id/tv_name"
+              style="@style/text_view"
+              android:layout_width="250dp"
+              android:text="深红源于米粉"
+              android:singleLine="true"
+              android:ellipsize="end"
+              android:textColor="@color/font_black"
+              android:textSize="16sp"/>
+
+    <TextView android:id="@+id/tv_time"
+              style="@style/text_view"
+              android:layout_below="@id/tv_name"
+              android:layout_marginTop="5dp"
+              android:text="2017-03-01 18:34"
+              android:textColor="@color/font_time_gray"
+              android:textSize="14sp"/>
+
+    <TextView android:id="@+id/tv_point"
+              style="@style/text_view"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:text="+1035"
+              android:textColor="@color/font_red"
+              android:textSize="16sp"/>
+
+</RelativeLayout>

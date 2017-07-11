@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/bg_white"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            <LinearLayout style="@style/linear_layout_vertical"
+                          android:background="@color/bg_white">
+
+                <ImageView style="@style/image_view"
+                           android:layout_width="125dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:background="@mipmap/fy_account"/>
+
+                <!-- <View android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="@color/view_line"/>
+
+                 <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                     <TextView style="@style/text_view_fy_account"
+                               android:text="富友用户ID　"/>
+
+                     <TextView style="@style/text_view_fy_account"
+                               android:layout_marginLeft="20dp"
+                                />
+
+                 </LinearLayout>-->
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/view_line"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                    <TextView style="@style/text_view_fy_account"
+                              android:text="用户姓名　　"/>
+
+                    <TextView android:id="@+id/tv_real_name"
+                              style="@style/text_view_fy_account"
+                              android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/view_line"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                    <TextView style="@style/text_view_fy_account"
+                              android:text="用户手机号码"/>
+
+                    <TextView android:id="@+id/tv_user_phone"
+                              style="@style/text_view_fy_account"
+                              android:layout_marginLeft="20dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/view_line"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                    <TextView style="@style/text_view_fy_account"
+                              android:text="身份证号码　"/>
+
+                    <TextView android:id="@+id/tv_id_card"
+                              style="@style/text_view_fy_account"
+                              android:layout_marginLeft="20dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/view_line"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                    <TextView style="@style/text_view_fy_account"
+                              android:text="开户银行　　"/>
+
+                    <TextView android:id="@+id/tv_bank_name"
+                              style="@style/text_view_fy_account"
+                              android:layout_marginLeft="20dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/view_line"/>
+
+                <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                    <TextView style="@style/text_view_fy_account"
+                              android:text="银行账号　　"/>
+
+                    <TextView android:id="@+id/tv_bank_num"
+                              style="@style/text_view_fy_account"
+                              android:layout_marginLeft="20dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/view_line"/>
+
+                <!--         <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                             <TextView style="@style/text_view_fy_account"
+                                       android:text="用户卡密验证"/>
+
+                             <TextView style="@style/text_view_fy_account"
+                                       android:layout_marginLeft="20dp"
+                                        />
+
+                         </LinearLayout>
+
+                         <View android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:background="@color/view_line"/>
+
+                         <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                             <TextView style="@style/text_view_fy_account"
+                                       android:text="用户身份验证"/>
+
+                             <TextView style="@style/text_view_fy_account"
+                                       android:layout_marginLeft="20dp"
+                                        />
+
+                         </LinearLayout>
+
+                         <View android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:background="@color/view_line"/>
+         -->
+                <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                    <TextView style="@style/text_view_fy_account"
+                              android:text="用户签约　　"/>
+
+                    <TextView android:id="@+id/tv_fuiou_sign_status"
+                              style="@style/text_view_fy_account"
+                              android:layout_marginLeft="20dp"
+                    />
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/view_line"/>
+
+                <!-- <LinearLayout style="@style/linear_layout_horizontal_fy_account">
+
+                     <TextView style="@style/text_view_fy_account"
+                               android:text="用户状态　　"/>
+
+                     <TextView style="@style/text_view_fy_account"
+                               android:layout_marginLeft="20dp"
+                                />
+
+                 </LinearLayout>
+
+                 <View android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="@color/view_line"/>-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>

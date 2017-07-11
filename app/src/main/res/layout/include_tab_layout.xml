@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.dsmmjr.customer.SlidingTabLayout android:id="@+id/sliding_tab_layout"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="50dp"
+                                          android:background="@color/bg_white"
+                                          tl:tl_indicator_color="@color/font_golden"
+                                          tl:tl_indicator_width="20dp"
+                                          tl:tl_textSelectColor="@color/font_golden"
+                                          tl:tl_textUnselectColor="@color/font_black"
+                                          tl:tl_textsize="16sp"/>
+
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager_layout"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"/>
+
+</LinearLayout>

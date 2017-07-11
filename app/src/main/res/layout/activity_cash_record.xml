@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout style="@style/linear_layout_vertical"
+                  android:layout_height="match_parent">
+
+        <include layout="@layout/include_title"/>
+
+        <include layout="@layout/include_pull_listview"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+
+</RelativeLayout>

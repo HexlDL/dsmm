@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_white"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+    <LinearLayout android:id="@+id/ll_item_popup_redpackets_select"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <CheckBox android:id="@+id/cb_select"
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:layout_marginTop="2dp"
+                      android:background="@drawable/selector_cb_coupon"
+                      android:button="@null"/>
+
+            <TextView android:id="@+id/tv_title"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_value"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:text="5000"
+                      android:layout_gravity="center_vertical"
+                      android:textColor="@color/font_golden"
+                      android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:paddingLeft="30dp">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="有效期至："
+                      android:id="@+id/tv_term_validity"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_last_hour"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tv_invest_limit"
+                      android:text="投资限制："
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tv_limit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:textColor="@color/font_black"
+                      android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

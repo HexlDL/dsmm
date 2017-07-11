@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <include layout="@layout/include_title"/>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_marginTop="30dp">
+
+            <EditText android:id="@+id/et_old_pwd"
+                      style="@style/edittext_reg"
+                      android:hint="@string/input_original_pwd"
+                      android:inputType="textPassword"/>
+
+            <ImageView style="@style/image_view"
+                       android:id="@+id/iv_old_pwd"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="50dp"
+                       android:contentDescription="@null"
+                       android:src="@mipmap/pwd_hidden_violet"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout"
+                        android:layout_marginTop="15dp">
+
+            <EditText style="@style/edittext_reg"
+                      android:id="@+id/et_new_pwd"
+                      android:hint="@string/input_new_login_pwd"
+                      android:inputType="textPassword"/>
+
+            <ImageView style="@style/image_view"
+                       android:id="@+id/iv_new_pwd"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="50dp"
+                       android:contentDescription="@null"
+                       android:src="@mipmap/pwd_hidden_violet"/>
+
+        </RelativeLayout>
+
+        <Button android:id="@+id/btn_confirm_update"
+                style="@style/button_reg"
+                android:layout_marginTop="30dp"
+                android:text="@string/confirm_update"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/waiting_view"
+             layout="@layout/waiting_view_loading"
+             android:visibility="gone"/>
+
+</RelativeLayout>
