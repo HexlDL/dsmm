@@ -1,6 +1,7 @@
 package com.dsmmjr.ui.account.widget.activitys;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
@@ -76,6 +77,8 @@ public class GestureEditActivity extends BaseActivity implements OnClickListener
         setUpViews();
     }
 
+    private Handler mHandler = new Handler();
+
     private void setUpViews() {
         mTextReset.setClickable(false);
         // 初始化一个显示各个点的viewGroup
@@ -85,14 +88,21 @@ public class GestureEditActivity extends BaseActivity implements OnClickListener
                 if (!isInputPassValidate(inputCode)) {
                     mTextTip.setText(Html.fromHtml("<font color='#ff8f15'>最少链接4个点, 请重新输入</font>"));
                     mGestureContentView.clearDrawlineState(0L);
+                    mHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            mTextTip.setText("");
+                        }
+                    }, 2000);
                     return;
                 }
                 if (mIsFirstInput) {
                     mFirstPassword = inputCode;
                     updateCodeList(inputCode);
-                    mGestureContentView.clearDrawlineState(1000 * 1);
+                    mGestureContentView.clearDrawlineState(1000);
                     mTextReset.setClickable(true);
                     mTextReset.setText(getString(R.string.reset_gesture_code));
+                    Toast.makeText(GestureEditActivity.this, "请再次输入手势密码", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     if (inputCode.equals(mFirstPassword)) {
@@ -106,8 +116,6 @@ public class GestureEditActivity extends BaseActivity implements OnClickListener
                         if (mGesture_flag == 3) {
                             Intent intent = new Intent(GestureEditActivity.this, RegisterCompleteActivity.class);
                             startActivity(intent);
-                        }
-                        else {
                         }
                         GestureEditActivity.this.finish();
                     }
@@ -168,5 +176,4 @@ public class GestureEditActivity extends BaseActivity implements OnClickListener
         }
         return true;
     }
-
 }
